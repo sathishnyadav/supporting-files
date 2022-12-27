@@ -1,15 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE hibernate-mapping PUBLIC
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
 "-//Hibernate/Hibernate Mapping DTD//EN"
-          "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-	<class name="org.btm.Student" table="student" >
-		<id name="id" column="id">
-			<generator class="assigned"></generator>
-		</id>
-		<property name="firstName" column="fN"></property>
-		<property name="lastName" column="lN"></property>
-	</class>
+	<class name="org.btm.Employee" table="EMPLOYEE">
 
-</hibernate-mapping>  
+		<id name="id" column="id">
+			<generator class="assigned" />
+		</id>
+		<property name="name" column="name" />
+		<property name="salary" column="salary" />
+
+	</class>
+</hibernate-mapping>
